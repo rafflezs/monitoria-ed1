@@ -21,9 +21,9 @@ int inserirSoldado(Circulo* c, Soldado* s);
 int sortearInicial(Circulo* c, int n);
 
 //** Main Loop (gerar roda de Josephus)
-void iniciarRodaDeJosephus();
+void iniciarRodaDeJosephus(Circulo* c, int n);
 int removerSoldado(Circulo* c, Soldado* s);
-int sortearProximo(Circulo* c);
+Soldado* sortearProximo(Circulo* c,int n);
 
 //** Display
 void exibirSoldados(Circulo* c);

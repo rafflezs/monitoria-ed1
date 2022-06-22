@@ -4,7 +4,6 @@ int contador = 0;
 
 void drive()
 {
-
   Circulo *c = criarCirculo();
 int opt;
   do
@@ -35,11 +34,19 @@ int opt;
 
     case 3:
     {
+      int n = 0;
+      printf("\nInsira uma contagem n: ");
+      scanf("%d", &n);
+      sortearInicial(c,n);
     }
     break;
 
     case 4:
     {
+      int n = 0;
+      printf("\nInsira uma contagem n: ");
+      scanf("%d", &n);
+      iniciarRodaDeJosephus(c,n);
     }
     break;
 
